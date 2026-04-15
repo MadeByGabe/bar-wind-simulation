@@ -1,6 +1,7 @@
 # BAR Wind Simulation
 
 Simulates the wind speed algorithm used by [Beyond All Reason](https://www.beyondallreason.info/) outside of the game. Useful for planning build orders with realistic wind data.
+Wind simulation is based on the original BAR simulation source: [Wind.cpp](https://github.com/beyond-all-reason/RecoilEngine/blob/master/rts/Sim/Misc/Wind.cpp).
 
 ## Requirements
 
@@ -46,3 +47,8 @@ Time (s)  Strength
 ## How it works
 
 Updates wind at 10 fps. Each update smoothly interpolates toward a new randomly generated wind target over ~15 seconds (150 frames). This tool replicates that algorithm exactly, so the output matches what you would see in an actual game.
+
+## Author
+
+Wind speed simulation was made by Baldric.  
+The index.ts file and README were made by Claude.
